@@ -1,3 +1,4 @@
+require("dotenv").config();
 const Posts = require("../model/Posts");
 const getAllPosts = async (req, res) => {
     const post = await Posts.findById({ _id: process.env.ALL_POSTS });
